@@ -1,42 +1,47 @@
-Create a Xcode Project.
-Choose the Language  Objective C.
-Choose the Device iPhone/iPad.
+Custom Localization is the process of translating your app into multiple languages without changing your device language. 
 
+To keep things simple, my goal in this tutorial is to show you how to:
 
-Select a “New File” from Xcode Project
-Select a String File from “Resource” of iOS Menu List
-Then click to Xcode Project icon and Took the Project Info
-Add the Languages under Localizations 
-Then Click the Localisable.strings file,you can see the Localization button on Right side menu.Click that button ;now you can see the list of language ,
-after that tick each language from that menu.
+* Localize any strings existing in the code that are about to be displayed to the users without changing the device language.
+* Use new Xcode 6 features for importing and exporting files for translation and performing localization
 
+Implementation : -
+Step 1. 
+Creating the project .Choose the Language  Objective C.Choose the Device iPhone/iPad.
+Step 2.
+On Xcode, open the menu File > New > File….
+In the window that’s shown, in the iOS category go to the Resource option (at the left) and select Strings File. Name your file "Localizable.string".
+Step 3.
+Go to Xcode Project icon & took the Project Info.Add the Languages under Localizations.
+Step 4.
+Go to Localizable.strings,you can see the Localization button on Right side menu.
+Click that button ;now you can see the list of language which are you added, tick each language from that menu.
+Step 5:
+Now you can see the multiple localization strings file under Localisable.Strings.In this application i used two languages one is arabic and another one is english,from this project you can see  the following localizable string under Localisable.Strings
+1.Localisable.Strings (English)
+2.Localisable.Strings (Arabic)
+Step 6:
+Add the text to localizable string.Now open each of the files to add the text you want to localize, remember the format. Do it in the desired language file.
 
-Now you can see the multiple localization strings file from Localisable.Strings.
-In this app i choose 2 language one is Arabic and another one is English 
+Syntax : "key" = "localized text";
 
-Then add your strings inside the each string using following syntax
+Example : "Hello_world" = "مرحبا بالعالم";
 
-“KEY” = “STRING”
+Add this point is exactly as if you were adding normal localization.
 
-Note that all localisation string use same  key for same string 
+Step 6 :
 
-for an example in English Localization string we use 
+You have to add the Common.h and Common.m to your project.
 
-“Hello_string” = “HELLO WORLD”
-
-but this string using in arabic we use
-
-“Hello_string” = “مرحبا بالعالم”
-
-
-/////After that add “Common.h” & “Common.m” file in your Xcode Project
-then import Common.h file 
+Step 6 :
+Import Common.h file in your classes
 
 After that you can invoke your text based on your language
 
 for example 
+ _languageLabel.text = NSLocalizedString(@"Hello_world", @"”);
 
- _languageLabel.text = NSLocalizedString(@"Hello_world", @"");
 
-
+If anyone has any suggestion or question leave it in the comments. I'll be glad to answer.
+Thank you for reading.
 
