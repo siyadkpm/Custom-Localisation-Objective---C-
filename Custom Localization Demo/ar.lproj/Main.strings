@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "Choose your Language"; ObjectID = "o49-Lm-tZk"; */
+"o49-Lm-tZk.text" = "Choose your Language";
+
+/* Class = "UIButton"; normalTitle = "Arabic"; ObjectID = "rmY-oK-5to"; */
+"rmY-oK-5to.normalTitle" = "Arabic";
+
+/* Class = "UIButton"; normalTitle = "English"; ObjectID = "s1C-xn-jq7"; */
+"s1C-xn-jq7.normalTitle" = "English";

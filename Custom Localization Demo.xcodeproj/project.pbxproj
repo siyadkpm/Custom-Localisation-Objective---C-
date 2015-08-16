@@ -14,6 +14,8 @@
 		A35426F91B806A4C00BD4BFA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A35426F81B806A4C00BD4BFA /* Images.xcassets */; };
 		A35426FC1B806A4C00BD4BFA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A35426FA1B806A4C00BD4BFA /* LaunchScreen.xib */; };
 		A35427081B806A4C00BD4BFA /* Custom_Localization_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A35427071B806A4C00BD4BFA /* Custom_Localization_DemoTests.m */; };
+		A35427151B806B5E00BD4BFA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A35427171B806B5E00BD4BFA /* Localizable.strings */; };
+		A354271F1B806C6900BD4BFA /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = A354271E1B806C6900BD4BFA /* Common.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,12 @@
 		A35427011B806A4C00BD4BFA /* Custom Localization DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Custom Localization DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A35427061B806A4C00BD4BFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A35427071B806A4C00BD4BFA /* Custom_Localization_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Custom_Localization_DemoTests.m; sourceTree = "<group>"; };
+		A35427131B806B5500BD4BFA /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		A35427141B806B5500BD4BFA /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		A35427181B806B6100BD4BFA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A35427191B806B6700BD4BFA /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A354271D1B806C6900BD4BFA /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		A354271E1B806C6900BD4BFA /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,8 @@
 		A35426EA1B806A4C00BD4BFA /* Custom Localization Demo */ = {
 			isa = PBXGroup;
 			children = (
+				A354271C1B806C4800BD4BFA /* Common */,
+				A354271B1B806C2E00BD4BFA /* Localizabe String */,
 				A35426EF1B806A4C00BD4BFA /* AppDelegate.h */,
 				A35426F01B806A4C00BD4BFA /* AppDelegate.m */,
 				A35426F21B806A4C00BD4BFA /* ViewController.h */,
@@ -117,6 +127,23 @@
 				A35427061B806A4C00BD4BFA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A354271B1B806C2E00BD4BFA /* Localizabe String */ = {
+			isa = PBXGroup;
+			children = (
+				A35427171B806B5E00BD4BFA /* Localizable.strings */,
+			);
+			name = "Localizabe String";
+			sourceTree = "<group>";
+		};
+		A354271C1B806C4800BD4BFA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A354271D1B806C6900BD4BFA /* Common.h */,
+				A354271E1B806C6900BD4BFA /* Common.m */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +209,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = A35426DF1B806A4B00BD4BFA;
 			productRefGroup = A35426E91B806A4C00BD4BFA /* Products */;
@@ -200,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A35426F71B806A4C00BD4BFA /* Main.storyboard in Resources */,
+				A35427151B806B5E00BD4BFA /* Localizable.strings in Resources */,
 				A35426FC1B806A4C00BD4BFA /* LaunchScreen.xib in Resources */,
 				A35426F91B806A4C00BD4BFA /* Images.xcassets in Resources */,
 			);
@@ -219,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A354271F1B806C6900BD4BFA /* Common.m in Sources */,
 				A35426F41B806A4C00BD4BFA /* ViewController.m in Sources */,
 				A35426F11B806A4C00BD4BFA /* AppDelegate.m in Sources */,
 				A35426EE1B806A4C00BD4BFA /* main.m in Sources */,
@@ -248,6 +278,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A35426F61B806A4C00BD4BFA /* Base */,
+				A35427131B806B5500BD4BFA /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -256,8 +287,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				A35426FB1B806A4C00BD4BFA /* Base */,
+				A35427141B806B5500BD4BFA /* ar */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		A35427171B806B5E00BD4BFA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A35427181B806B6100BD4BFA /* en */,
+				A35427191B806B6700BD4BFA /* ar */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -280,7 +321,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: SIYAD E (F9JR6GHAJ7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: SIYAD E (F9JR6GHAJ7)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -299,7 +341,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -323,7 +365,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: SIYAD E (F9JR6GHAJ7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: SIYAD E (F9JR6GHAJ7)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -336,7 +379,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -348,6 +391,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Custom Localization Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -358,6 +402,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Custom Localization Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -416,6 +461,7 @@
 				A354270D1B806A4C00BD4BFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A354270E1B806A4C00BD4BFA /* Build configuration list for PBXNativeTarget "Custom Localization DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +470,7 @@
 				A35427101B806A4C00BD4BFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
